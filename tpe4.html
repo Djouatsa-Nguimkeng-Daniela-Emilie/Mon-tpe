@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de Voyage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .container img {
+      width: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .form-voyage {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-voyage h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-voyage label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .form-voyage input,
+    .form-voyage select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-voyage button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-voyage button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Image de voyage -->
+    <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/tpe152 Djouatsa Nguimkeng/image.html/image-1.png" alt="Image de voyage">
+    
+    <!-- Formulaire -->
+    <form class="form-voyage">
+      <h2>Formulaire de Voyage</h2>
+
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="destination">Destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Choisir une destination --</option>
+        <option value="paris">Paris</option>
+        <option value="rome">Rome</option>
+        <option value="newyork">New York</option>
+        <option value="tokyo">Tokyo</option>
+      </select>
+
+      <label for="date-depart">Date de départ</label>
+      <input type="date" id="date-depart" name="date-depart" required>
+
+      <label for="date-retour">Date de retour</label>
+      <input type="date" id="date-retour" name="date-retour" required>
+
+      <button type="submit">Réserver</button>
+    </form>
+  </div>
+
+</body>
+</html>
